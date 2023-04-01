@@ -1,7 +1,7 @@
 // import { useState, useEffect } from "react";
 import {Routes, Route} from "react-router-dom";
 import About from "./About";
-
+import Home from "./Home";
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path="/" element={<Home />}/>
         <Route path="/about" element={<About />}/>
       </Routes>
     </div>
