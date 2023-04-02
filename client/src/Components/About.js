@@ -1,7 +1,7 @@
 function About(){
     return(
         <div>
-            <h1 style={{fontWeight: "60px"}}>This element could not contain me! I am here to stay!</h1>
+            <h1>⚔️ This element could not contain me! I am here to stay! ⚔️</h1>
         </div>
     )
 }
