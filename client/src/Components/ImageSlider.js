@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 function ImageSlider({slides}){
-    console.log(slides)
+    // console.log(slides)
 const [current, setCurrent] = useState(0)
 const length = slides.length
 
@@ -24,7 +24,6 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {slides.map((slide, index) => {
-                console.log(slide)
                 return (
                     <div
                         className={index === current ? 'slide active' : 'slide'}
